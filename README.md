@@ -45,7 +45,7 @@ Agrega el/los archivos a tu repositorio local.
 
 ---
 
-## *Comandos de informacion:*
+## Comandos de informacion:
 
 ---
 
@@ -66,6 +66,16 @@ Es una version recortada del `git log`.
 Es una version grafica.
 
 Si gustarias de mas comandos para ver distitas opciones de presentacion de informacion de tu repositorio, puedes usar `git log --help`. Pero con las ya mencionadas ya seria suficiente.
+
+---
+
+## Configuracion del name y email(error commits)
+
+---
+
+### *Comando :*`git config --global user.name "tu nombre"` && `git config --global user.email "tu email"`
+
+Seguramente tuviste problemas con los commit, y se debe a la falta de aplicacion de usuario, con este comando ya estableces tu usuario y ya puedes hacer todo lo que quieras.
 
 
 
