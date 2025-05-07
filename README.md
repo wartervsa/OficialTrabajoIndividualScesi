@@ -77,6 +77,43 @@ Si gustarias de mas comandos para ver distitas opciones de presentacion de infor
 
 Seguramente tuviste problemas con los commit, y se debe a la falta de aplicacion de usuario, con este comando ya estableces tu usuario y ya puedes hacer todo lo que quieras.
 
+---
 
+## Branch(Ramas)
+
+---
+
+Una rama es una copia de tu linea/rama principal de trabajo.
+
+![Representacion grafica de las ramas](https://gitbookdown.dallasdatascience.com/img/git_branch_merge.png)
+
+---
+
+ ### *Comando :*`git branch <nombre de tu rama>`*|Creacion de una rama|*
+
+ Crea una rama a partir de la rama padre(master/main). Cabe recalcar que los cambios en esta rama no afectan a la rama padre/principal.
+
+ ---
+
+### *Comando :*`git branch` *|Lista de ramas|*
+
+Se puede ver todas las ramas de tu repositorio local, la rama en la que te encuentras esta marcada con un (*).
+
+---
+### *Comando :*`git branch -r` *|Lista de ramas remotas|*
+
+Muestra solo las ramas de tu repositorio remoto.
+
+---
+
+### *Comando :*`git branch -a` *|Lista TODAS las ramas|*
+
+Se muestran las ramas tanto de tu repositorio local como de tu repositorio remoto.
+
+---
+
+### *Comando :*`git branch -d <nombre de la rama>` *|Elimina la rama|*
+
+Es importante resaltar que no te elimanara la rama si antes no fusionaste (*merged*) esa rama con la rama principal. Hay una opcion para poder eliminar sin necesidad de merged y es  `git branch -D <nombre de la rama>`.
 
 
