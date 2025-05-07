@@ -1,6 +1,6 @@
 # CURSO GIT SCESI
 ---
-## MI PRIMERA EXPERIENCIA EN GIT/PRIMERA CLASE EN GIT 
+## MI PRIMERA EXPERIENCIA EN GIT 
 ---
 ### *¿Que es git?*
 
@@ -36,10 +36,36 @@ Aqui puede ver en que rama de encuentras(*On branch master*), (*Untacked files*)
 
 Usar este comando para agregar un archivo que no aun no toma en cuenta git para las confirmaciones(commits).
 
+---
+
 ### *Comando :*`git commit` *|Confirma las modificaciones en la rama|*
 
 Agrega el/los archivos a tu repositorio local.
 `git commit` Este comando si bien te ayuda a subir a tu repositorio local, se necesita de un titulo o si quieres una descripcion, al utilizar `git commit *archivo/s que agregaste*` se abrira tu editor de texto donde puede colocar el titulo y una descripcion, luego tenemos la opcion `git commit -m "el titulo de tu commit"` que te ahorra un poco de tiempo.
+
+---
+
+## *Comandos de informacion:*
+
+---
+
+### *Comando :* `git log` 
+
+Te muestra el historial de tus commits, incluidos el autor del commit, la fecha en la que se realizo, el nombre del commit, el hash completo, el apuntador(HEAD) y la rama.
+
+---
+
+### *Comando :*`git log --oneline`
+
+Es una version recortada del `git log`.
+
+---
+
+### *Comando :*`git log --graph`
+
+Es una version grafica.
+
+Si gustarias de mas comandos para ver distitas opciones de presentacion de informacion de tu repositorio, puedes usar `git log --help`. Pero con las ya mencionadas ya seria suficiente.
 
 
 
