@@ -199,5 +199,21 @@ GITHUB puedes encontrarlo en cualquier navegador y descargarlo en tu dispositivo
 
 ![Tutorial de creacion de repositorio](https://programacionfacil.org/images/cursos/git_github/github_create_repository.png)
 
+---
 
+## Configuracion del repositorio remoto
+
+---
+
+### *Comando :*`git remote add origin <direccion de tu repositorio` *|enlace|*
+
+Esto nos permitira generar un vinculo entre el repositorio local y el repositorio remoto.
+
+### *¿Que direccion colocar?*
+
+Se nos presentaran 3 opciones.- HTTPS, SSH y Github CLI
+
+![Direccion del repositorio remoto](https://juncotic.com/wp-content/uploads/2021/03/github-clone.png)
+
+La mas recomendable es SSH.
 
