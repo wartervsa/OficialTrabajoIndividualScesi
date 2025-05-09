@@ -183,4 +183,21 @@ GITHUB puedes encontrarlo en cualquier navegador y descargarlo en tu dispositivo
 
 ---
 
+## Repositorios remotos en github
+
+### Crea tu primer repositorio remoto
+
+1. Dale al boton "*create repository*
+
+![Create repository](https://www.programacionfacil.org/images/cursos/git_github/github_crear_repositorio.png)
+
+2. Escribe el nombre de tu repositorio.
+3. Selecciona si prefieres que sea publico o privado.
+4. Marcar si gusta el archivo README(aqui puede hacer un informe de lo que necesite explicar).
+5. Marcar si gusta el archivo gitignore(Nos ayuda a ocultar archivos que no utilizaremos).
+6. Selecciona la licencia, la licencia indica el uso, modificacion o distribucion sobre tu codigo.
+
+![Tutorial de creacion de repositorio](https://programacionfacil.org/images/cursos/git_github/github_create_repository.png)
+
+
 
