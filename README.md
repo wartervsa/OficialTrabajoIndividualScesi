@@ -386,6 +386,17 @@ Algo importante es que se debe discutir con el equipo el patron que se seguira, 
 
 Los nombres de las ramas deben indicar la accion directa que realiza, como `*bug*`, `*feature*`, `*release*`, etc.
 
+---
+
+Para concluir, debes saber que estas no son reglas impuestas que si o si debes cumplir, solo son recomendaciones y ayudas de personas que ya saben mejor del tema y el trabajo grupal, no obstante estos puntos mencionados son importantes para mantener un codigo bien estructurado.
+
+Los beneficios que te brinda son coherencia, estructura, mejor comprension, organizacion, trabajo grupal armonioso y una buena experiencia.
+
+Escoge o guiate con el que te siente mejor.
+
+---
+
+
 
 
 
