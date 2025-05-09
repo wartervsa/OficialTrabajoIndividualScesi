@@ -297,7 +297,56 @@ Descarga los nuevos cambios del repositorio remoto, mas no los fusiona al reposi
 
 ---
 
- 
+ ## Flujos de trabajo
 
+---
+Para tener un equipo bien organizado y estructurado de manera que se haga todo eficientemente requerimos de metodologias, tenemos las siguiente:
+
+### Gitflow
+
+Consiste en dividir la rama main/master en otra llamada `develop` , esta rama nos servira para implementar estos 3 aspectos importantes a la rama principal.
+
+*feature.-* Rama en la cual se tendras todas las nuevas funcionalidades, caracteristicas para el proyecto.
+
+*release.-* Aqui daremos paso a las nuevas versiones del proyecto.
+
+*hotfix.-* Sirve como parche, para poder resolver problemas que detectan mayormente los usuarios, en si son parches de urgencia. Se aplica directamente en la rama principal.
+
+![representacion de gitflow](https://miro.medium.com/v2/resize:fit:1400/1*3-0EDzE63S_UZx2KbIz_dg.png)
+
+---
+
+### Github Flow
+ 
+ Creada por los mismos desarrolladores de github, esta metodologia es mas simple de entender, basicamente creamos una rama por caracteristica que necesitamos, una ves listada y confirmada se agrega a traves de un pull request a la rama principal.
+
+ ![representacion de github flow](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8R9-RO_E40JE-wQ_reNO0iy-eHSsMRAdaxi36Y6l5ZA&s&ec=72940542)
+
+---
+
+### Trunk Based development
+
+Similar a Github flow, con la caracteristica de que se prioriza hacer los commits directamente en la rama principal y algunas veces se crean ramas aparte, pero dichas ramas duran muy poco tiempo y se trata se llevar a la rama principal lo mas antes posible. Cosas a tomar en cuenta para esta estrategia:
+
+1. Contar con un Integracion Continua(CI) para verificar el codigo.
+2. Que se trabaje en grupos para las ramas.
+3. Que dia con dia se rutinario.
+
+![representacion de trunk based develpment](https://statusneo.com/wp-content/uploads/2022/08/tbd_workflow.drawio-1-1.png)
+
+---
+
+### Ship/show/ask
+
+Metodo para gente mas experimentada. Se divide en 3 opciones:
+
+*ship.-* Se realiza un cambio y se integra a la rama principal directamente, claro antes se realizan test o checks pertienentes para evitar errores.
+
+*show.-* Se envia el cambio a traves de un pull request, que no lo revisan manualmente, se encarga un CI de comprobar si es valido o no. No quiere decir que el equipo no opine o revise el codigo, pero se hace despues de agregarlo.
+
+*ask.-* Se realiza a traves de un pull request, el cual si es revisado manualmente por el equipo, esta opcion mayormente la utilizan cuando dudan de si esta bien o es un complicado.
+
+![representacion ship show ask](https://midu.dev/images/ship-show-ask.png
+)
 
 
