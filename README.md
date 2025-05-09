@@ -431,6 +431,27 @@ Con este comando podemos elminar los cambios hechos y regresar al ultimo commit
 
 ---
 
+## Comandos utiles e interesante
+
+---
+
+### *Comando :*`git stash`
+
+Para entenderle rapidamente, pongamos el ejemplo de que estas modificando unos cuantos archivos y te surge la necesidad de cambiar de rama, lo que hace este comando es guardarte estos cambios sin necesidad de hacer un commit, y ya podiras cambiarte de rama sin problema.
+
+### *Comando :*`git stash list`
+
+Ahora te preguntaras como recupero estas modificaciones del `git stash` pues simplemente aplicas este comando, un dato es que el stash no desaparece o se borra, asi que si requieres usar de nuevo este stash lo puedes hacer.
+
+### *Comando :*`git cherry-pick 89a34d2-->(id de tu commit)`
+
+Muy util para traer a la rama que quieres un commit que viste necesario en tu otra rama, directamente lo trae el commit.
+
+### *Comando :*`git rebase <nombre de la rama>`
+
+Te permite traer los commits de otras ramas a tu rama, colocandolas como continuas a tu rama.
+
+---
 
 
 
