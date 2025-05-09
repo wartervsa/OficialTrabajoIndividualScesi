@@ -149,4 +149,23 @@ Pongamos de ejemplo que tu modificaste una rama, la commiteaste e hiciste todo e
 
  *TIP :* Si quieres que si o si se cree un commit de la fusion, aunque no sea un fast forward, entonces puedes usar el siguiente comando `git merge --no-ff "nombre de la rama"` de esta manera si gusta puede tener un mejor registro de las fusiones.
 
+ ---
+
+ ## Para tomar en cuenta 
  
+ ---
+
+ ### *Comando :*`git log --oneline --graph --all` *|Historial|*
+
+ Te apoyara a la hora de necesitar ver todos tus commits, tus ramas, tu apuntador, comando de gran ayuda para el seguimiento.
+
+ *No olvidar que debes estar en la rama a la que quieres que se fusione otra rama.*
+
+ *Utiliza el `git status` recurremente para dar seguimiento.*
+
+ *Si modificaste el mismo archivo/linea en distintas ramas, entonces git notara el conflicto y no te permitira hacer el merge, esto debes resolverlo manualmente.*
+
+---
+
+
+
