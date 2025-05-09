@@ -396,6 +396,26 @@ Escoge o guiate con el que te siente mejor.
 
 ---
 
+## ¿Te equivocaste con tu ultimo commit?                             
+
+---
+
+### *Comando :*`git reset --soft HEAD~1`
+
+Podras deshacer tu ultimo commit y no perderas los cambios de ese commit, se iran al area de staging. En el repositorio *Local!!*.
+
+---
+### *Comando :*`git reset --mixed HEAD~1`
+
+Deshace tu ultimo commit y los saca del area de staging, no rastreados. En el repositorio *Local!!*.
+
+---
+
+### *Comando :*`git reset --hard HEAD~1` 
+
+Este es peligroso, ya que borra por completo los commits posteriores, como si lo hubieras hecho. En el repositorio *Local!!*.
+
+---
 
 
 
