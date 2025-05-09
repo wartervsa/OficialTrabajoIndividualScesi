@@ -117,3 +117,36 @@ Se muestran las ramas tanto de tu repositorio local como de tu repositorio remot
 Es importante resaltar que no te elimanara la rama si antes no fusionaste (*merged*) esa rama con la rama principal. Hay una opcion para poder eliminar sin necesidad de merged y es  `git branch -D <nombre de la rama>`.
 
 
+## Movimiento y fusion(merge) entre ramas
+
+---
+
+### *Comando :*`git merge` *Fusiona ramas*
+
+*IMPORTANTE!!* Debes encontrarte en la rama a cla ual quieres agregar la rama.
+
+---
+
+### *Comando :*`git checkout <rama>` *|Cambiar de rama|*
+
+Con este comando podras moverte entre ramas. Tambien tenemos la variante `git checkout -b "nombre de la rama nueva"` esta nos ayuda a crear y movernos directamente a esa rama.
+
+---
+
+### Consideraciones antes de hacer un merge
+
+---
+
+#### No fast forward
+
+Si tu separaste una rama en un cierto punto de la rama principal e hiciste commits en ambas ramas de igual cantidad, se crea un commit auxiliar de representacion a la fusion de ambas ramas.
+
+![representacion grafica del fast forward](https://mascandobits.es/blog/wp-content/uploads/2021/03/Merge_Fast-Forward_vs_No_Fast-Forward.png)
+
+#### Fast forward
+
+Pongamos de ejemplo que tu modificaste una rama, la commiteaste e hiciste todo esto fuera de la principal, si a tu rama principal no se le hizo ningun commit desde la particion de la rama, entonces tu rama principal directamente salta al ultimo commit de la rama particionada.
+
+ *TIP :* Si quieres que si o si se cree un commit de la fusion, aunque no sea un fast forward, entonces puedes usar el siguiente comando `git merge --no-ff "nombre de la rama"` de esta manera si gusta puede tener un mejor registro de las fusiones.
+
+ 
