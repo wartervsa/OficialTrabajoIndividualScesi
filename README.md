@@ -185,6 +185,8 @@ GITHUB puedes encontrarlo en cualquier navegador y descargarlo en tu dispositivo
 
 ## Repositorios remotos en github
 
+---
+
 ### Crea tu primer repositorio remoto
 
 1. Dale al boton "*create repository*
@@ -222,6 +224,8 @@ La mas recomendable es SSH.
 
 ## Configuracion direccion HTTPS y SSH
 
+---
+
 Seguido de conectar los servidores, necesitamos seguir ciertos pasos para las Keys.
 
 ### Configuracion de direccion HTTPS
@@ -245,7 +249,11 @@ Password for 'https://wartervsa@github.com':
 
 Ahora copias la llave a Password ya estaria, esto te pedira cada vez que hagas un pull o fetch o push.
 
+---
+
 ### Configuracion de direccion SSH
+
+--- 
 
 1. Primero nos aseguramos de tener o no una llave SSH, en la terminal con el comando `ls ~/.ssh/id_ed25519.pub`
 Te aseguras si lo tienes o no.
@@ -261,8 +269,35 @@ Le das enter a todo, hay una parte que te dice sobre agregar *passphrase* si no 
 
 Con esto ya podras hacer todo de forma segura y comoda.
 
+## Comandos basicos de Github
 
+---
 
+### *Comando :*`git clone <direccion del repositorio remoto>`
+
+Clona todo el repositorio remoto a tu repositorio local.
+
+---
+
+### *Comando :*`git push origin "nombre de la rama"`
+
+Con este comando puedes subir todos los cambios o añadidos del codigo fuente al repositorio remoto.
+
+---
+
+### *Comando :*`git pull "nombre de la rama"`
+
+Descarga y fusiona los cambios del repositorio remoto a tu repositorio local.
+
+---
+
+### *Comando :*`git fetch`
+
+Descarga los nuevos cambios del repositorio remoto, mas no los fusiona al repositorio local.
+
+---
+
+ 
 
 
 
