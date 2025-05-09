@@ -207,7 +207,7 @@ GITHUB puedes encontrarlo en cualquier navegador y descargarlo en tu dispositivo
 
 ### *Comando :*`git remote add origin <direccion de tu repositorio` *|enlace|*
 
-Esto nos permitira generar un vinculo entre el repositorio local y el repositorio remoto.
+Esto nos permitira conectar el repositorio local y el repositorio remoto, dandole el nombre de `origin` al servidor remoto.
 
 ### *¿Que direccion colocar?*
 
@@ -216,4 +216,53 @@ Se nos presentaran 3 opciones.- HTTPS, SSH y Github CLI
 ![Direccion del repositorio remoto](https://juncotic.com/wp-content/uploads/2021/03/github-clone.png)
 
 La mas recomendable es SSH.
+
+---
+
+
+## Configuracion direccion HTTPS y SSH
+
+Seguido de conectar los servidores, necesitamos seguir ciertos pasos para las Keys.
+
+### Configuracion de direccion HTTPS
+
+1. Colocamos el comando `git push -u origin main/master` seguido de esto nos saldra.-
+
+```
+
+Username for 'https://github.com': wartervsa   
+Password for 'https://wartervsa@github.com': 
+
+```
+2. Username, colocas el nombre que gustes para identificarte.
+3. Ahora viene lo importante, necesitas dirigirte a Github.
+4. Presiona tu perfil(derecha superior).
+5. Entra a las configuraciones(settings).
+6. Baja al final de las opciones de la izquierda y dale a `<>Developer settings` .
+7. Continua con `Personal access tokens` y dale a `Tokens(clasic)`.
+8. Presiona `Generate new Token`, selecciona el clasico.
+9. Escribe tu nota, selecciona la fecha de expiracion y escoge como basico repo, listo ya tienes tu llave.
+
+Ahora copias la llave a Password ya estaria, esto te pedira cada vez que hagas un pull o fetch o push.
+
+### Configuracion de direccion SSH
+
+1. Primero nos aseguramos de tener o no una llave SSH, en la terminal con el comando `ls ~/.ssh/id_ed25519.pub`
+Te aseguras si lo tienes o no.
+
+2. Si no la tienes es hora de crearla, coloca el comando `ssh-keygen -t ed25519 -C "tucorreo@example.com"` 
+Le das enter a todo, hay una parte que te dice sobre agregar *passphrase* si no quieres que te pregunte cada vez por tu contraseña entonces dale enter, enter y enter.
+
+3. Ahora añadimos esta clave SSH a github, nos dirigimos al sitio https://github.com/settings/keys 
+
+4. Seleccionamos `New SSH key`, agregar tu titulo de la llave y en *key* colocamos la llave 
+
+5. La llave la conseguimos con el comando `cat ~/.ssh/id_ed25519.pub` y comienza desde *ssh...* seguido de esto copias hasta antes de tu correo, lo pegas en key y ya estaria.
+
+Con esto ya podras hacer todo de forma segura y comoda.
+
+
+
+
+
 
