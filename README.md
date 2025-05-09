@@ -346,7 +346,20 @@ Metodo para gente mas experimentada. Se divide en 3 opciones:
 
 *ask.-* Se realiza a traves de un pull request, el cual si es revisado manualmente por el equipo, esta opcion mayormente la utilizan cuando dudan de si esta bien o es un complicado.
 
-![representacion ship show ask](https://midu.dev/images/ship-show-ask.png
-)
+![representacion ship show ask](https://midu.dev/images/ship-show-ask.png)
+
+## Pull Request
+
+Que es un pull request(PR), es una solicitud que se envia a tu repositorio remoto, el cual es revisado por los miembros de tu grupo o tambien se puede hacer revisar con una Integracion Continua(CI), con el fin de decir si esta bien o no la modificacion que estas queriendo implementar en la rama principal del repositorio remoto.
+
+## Integracion Continua(CI)
+
+Es un sistema automatizado que se encarga de detectar errores a la hora de compilar.
+
+## Entrega Continua(CD)
+
+Es una extension del CI que se encarga de subir(ejecucion) el codigo que ya ha pasado por CI al repositorio remoto. 
+
+
 
 
