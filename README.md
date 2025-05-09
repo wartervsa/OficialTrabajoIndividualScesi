@@ -417,6 +417,23 @@ Este es peligroso, ya que borra por completo los commits posteriores, como si lo
 
 ---
 
+### *Comando :*`git revert <id del commit>`
+
+Genera un nuevo commit donde se encuentra revertido, osea que quita(no lo borra) el commit, pero se mantiene la historia completa.
+
+### Comando :*`git checkout HEAD -- <archivo.txt>`
+
+Restaura el archivo a como estaba antes sin confirmarse, ahora tenemos pero al restore, pero es una opcion.
+
+### Comando :*`git restore archivo.txt`
+
+Con este comando podemos elminar los cambios hechos y regresar al ultimo commit
+
+---
+
+
+
+
 
 
 
