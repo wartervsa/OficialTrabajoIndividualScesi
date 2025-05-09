@@ -167,5 +167,20 @@ Pongamos de ejemplo que tu modificaste una rama, la commiteaste e hiciste todo e
 
 ---
 
+# GITHUB
+
+---
+
+## *¿Que acaso GIT y GITHUB no son lo mismo?*
+
+Respuesta directa no, la explicacion es que GIT es un controlador de versiones que se puede manejar de manera local y GITHUB es un servidor en la nube que nos ayuda a tener un punto donde podemos subir todos nuestros repositorios locales, aparte de que su caracteristica principal es el trabajo en equipo.
+
+## Repositorios remotos
+
+Son repositorios hospedados en un servidor que sirven como punto de sincronizacion para diferentes repositorios locales.
+
+GITHUB puedes encontrarlo en cualquier navegador y descargarlo en tu dispositivo, con una interfaz muy amistosa a la vista. Para dar tus primeros pasos en GITHUB debes crearte una cuenta, una vez hecho esto podras curiosear y darte cuenta de la importancia de GITHUB, la creacion de repositorios remotos, la cantidad inmensa de codigos disponibles, poder trabajar colaborativamente, son algunas ventajas.
+
+---
 
 
