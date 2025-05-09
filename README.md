@@ -350,6 +350,8 @@ Metodo para gente mas experimentada. Se divide en 3 opciones:
 
 ## Pull Request
 
+---
+
 Que es un pull request(PR), es una solicitud que se envia a tu repositorio remoto, el cual es revisado por los miembros de tu grupo o tambien se puede hacer revisar con una Integracion Continua(CI), con el fin de decir si esta bien o no la modificacion que estas queriendo implementar en la rama principal del repositorio remoto.
 
 ## Integracion Continua(CI)
@@ -359,6 +361,30 @@ Es un sistema automatizado que se encarga de detectar errores a la hora de compi
 ## Entrega Continua(CD)
 
 Es una extension del CI que se encarga de subir(ejecucion) el codigo que ya ha pasado por CI al repositorio remoto. 
+
+## Buenas practicas
+
+---
+
+Si bien no son reglas a seguir, son consideraciones a tomar en cuenta para poder tener una estructura coherente y facil de seguir.
+
+---
+
+### Commits
+
+Es muy recomendable realizar commits recurrentemente para poder tener mejor manejo de los cambios que realizamos, asi con mas facilidad vamos a un commit el cual no tiene tantos cambios, ahorrandos tiempo. A ver tampoco es hacer commmits sin sentido, de igual forma deben tener una coherencia.
+
+El nombre de commits es otro tema del cual discutir, ya que necesitamos que sean nombres que sean descriptivos, directos y a veces literales, por ejemplo tu agregaste x cosa, puedes usar `add`, cambiar algo `change`, reparaste algun bug `fix`, asi mantenemos claro la funcion del commit. No uses puntuaciones como punto final, puntos suspensivos, y todos los que hay.
+
+Evita que pase de los 50 caracteres, describe todo lo necesario en el cuerpo del commit y utiliza prefijos.
+
+---
+
+### Branchs
+
+Algo importante es que se debe discutir con el equipo el patron que se seguira, asi dejamos de lado confusiones, mal entendidos o cualquier cosa que surja.
+
+Los nombres de las ramas deben indicar la accion directa que realiza, como `*bug*`, `*feature*`, `*release*`, etc.
 
 
 
