@@ -1,0 +1,165 @@
+x̄ = (2340×15 + 2355×20 + 2370×18 + 2385×12 + 2400×10) / 75
+x̄ = (35,100 + 47,100 + 42,660 + 28,620 + 24,000) / 75
+x̄ = 177,480 / 75
+x̄ = 2,366.4
+```
+
+¡Números gigantes! Más posibilidad de errores de cálculo.
+
+---
+
+## ✨ **CON ui, TODO SE SIMPLIFICA:**
+
+Usando **ui = (xi - x₀) / h**, transformamos esos números grandes en números pequeños:
+
+| xi | ui = (xi - 2370)/15 | fi | ui × fi |
+|----|---------------------|-----|---------|
+| 2,340 | -2 | 15 | -30 |
+| 2,355 | -1 | 20 | -20 |
+| 2,370 | 0 | 18 | 0 |
+| 2,385 | 1 | 12 | 12 |
+| 2,400 | 2 | 10 | 20 |
+
+Ahora trabajas con: -2, -1, 0, 1, 2... ¡Mucho más fácil!
+
+---
+
+## 📐 **LA FÓRMULA ui = (xi - x₃) / 5**
+
+Desglosemos cada parte:
+
+### **xi = Marca de clase**
+Es el punto medio de cada intervalo. Ya lo conoces.
+
+### **x₃ = Marca de clase del intervalo 3 (intervalo de referencia)**
+Es el valor que tomas como "centro" o punto de referencia. Generalmente se elige:
+- El intervalo del medio (en este caso el 3 de 5)
+- Hace que algunos ui sean negativos, algunos positivos, y el central sea 0
+
+### **5 = Factor de escala (h)**
+Es el "paso" que hay entre las marcas de clase. 
+- Si tus marcas de clase van de 5 en 5: h = 5
+- Si van de 10 en 10: h = 10
+- Si van de 15 en 15: h = 15
+
+---
+
+## 💡 **¿PARA QUÉ SIRVE ui?**
+
+### **1. SIMPLIFICAR CÁLCULOS**
+Trabajar con números pequeños (-2, -1, 0, 1, 2) es más fácil que con números grandes (2340, 2355, etc.)
+
+### **2. REDUCIR ERRORES**
+Menos dígitos = menos errores al multiplicar y sumar
+
+### **3. CALCULAR LA MEDIA MÁS RÁPIDO**
+Con ui, la fórmula de la media se convierte en:
+```
+x̄ = x₀ + h × ū
+```
+
+Donde:
+- **x₀** = valor de referencia (en tu caso x₃)
+- **h** = factor de escala (en tu caso 5)
+- **ū** = media de ui = Σ(fi × ui) / Σfi
+
+---
+
+## 📊 **EJEMPLO COMPLETO PASO A PASO:**
+
+Supongamos esta tabla:
+
+| Intervalo | xi | fi |
+|-----------|----|----|
+| [10-20) | 15 | 5 |
+| [20-30) | 25 | 8 |
+| [30-40) | 35 | 12 |
+| [40-50) | 45 | 7 |
+| [50-60) | 55 | 3 |
+
+### **Paso 1: Identificar x₀ y h**
+- Elegimos x₀ = x₃ = 35 (marca de clase del intervalo central)
+- h = 10 (diferencia entre marcas de clase consecutivas)
+
+### **Paso 2: Calcular ui**
+
+| xi | ui = (xi - 35)/10 |
+|----|-------------------|
+| 15 | (15-35)/10 = -2 |
+| 25 | (25-35)/10 = -1 |
+| 35 | (35-35)/10 = 0 |
+| 45 | (45-35)/10 = 1 |
+| 55 | (55-35)/10 = 2 |
+
+### **Paso 3: Tabla completa con ui**
+
+| xi | fi | ui | fi × ui |
+|----|----|-------|---------|
+| 15 | 5 | -2 | -10 |
+| 25 | 8 | -1 | -8 |
+| 35 | 12 | 0 | 0 |
+| 45 | 7 | 1 | 7 |
+| 55 | 3 | 2 | 6 |
+| **Total** | **35** | | **-5** |
+
+### **Paso 4: Calcular la media**
+
+**Método tradicional (sin ui):**
+```
+x̄ = Σ(xi × fi) / Σfi
+x̄ = (15×5 + 25×8 + 35×12 + 45×7 + 55×3) / 35
+x̄ = (75 + 200 + 420 + 315 + 165) / 35
+x̄ = 1,175 / 35
+x̄ = 33.57
+```
+
+**Método con ui (más fácil):**
+```
+ū = Σ(fi × ui) / Σfi = -5 / 35 = -0.143
+
+x̄ = x₀ + h × ū
+x̄ = 35 + 10 × (-0.143)
+x̄ = 35 - 1.43
+x̄ = 33.57
+```
+
+¡El mismo resultado pero con cálculos más simples!
+
+---
+
+## 🎓 **¿DE DÓNDE SALEN LOS DATOS DE ui?**
+
+### **fi × ui:**
+Son simplemente el producto de la frecuencia por su ui correspondiente.
+
+En tu ejercicio:
+- **Intervalo 1:** f₁ × u₁ = -54
+  - Si u₁ = -6, entonces f₁ = -54 / -6 = 9
+
+### **fi × ui²:**
+Es el producto de la frecuencia por ui al cuadrado.
+
+En tu ejercicio:
+- **Intervalo 1:** f₁ × u₁² = 162
+  - Si f₁ = 9 y u₁ = -6, entonces 9 × (-6)² = 9 × 36 = 324... 
+  - (Si da 162, entonces u₁² = 162/9 = 18, lo que significa u₁ ≈ ±4.24)
+
+**Estos datos se usan para:**
+1. **Σ(fi × ui)**: Calcular la media codificada
+2. **Σ(fi × ui²)**: Calcular la varianza y desviación estándar
+
+---
+
+## 📋 **RESUMEN VISUAL:**
+```
+Números GRANDES y difíciles
+         ↓
+    ui = (xi - x₀) / h
+         ↓
+Números PEQUEÑOS y fáciles
+         ↓
+  Cálculos más simples
+         ↓
+  Resultado más rápido
+         ↓
+Transformación inversa para obtener x̄
